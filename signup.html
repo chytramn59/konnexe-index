@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Konnexe</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/signup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+ <srcipt src= "https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>
+</head>
+<body>
+  <div class="row">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navclass-custom">
+         <div class="col-md-1 hidden-xs"></div>
+             <div class="col-md-6 col-xs-4">
+          <img src="./images/Page 1.png"></div>
+      <div class="col-md-4 col-xs-8 text-right">
+          <a href="https://www.twitter.com"><i id="tweet" class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com"><i id="link" class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a id="col" href="#">Log In</a></li>
+            <li><a id="col" href="#">Sign Up</a></li>
+          </ul>
+      </div>
+      <div class="col-md-1 hidden-xs"></div>
+         </div>
+    </nav>
+  </div>
+  <div class="row">
+    <div class="col-sm-2 col-md-2"></div>
+    <div id="form" class="col-sm-8 col-md-8">
+        <div class="row">
+          <div class="col-sm-6 col-md-6">
+            <h1 style="color:#74839A">Sign up with Email</h1>
+          </div>
+          <div class="col-sm-2 col-md-2">
+            <h2 style="color:#74839A">Or</h2>
+          </div>
+          <div class="col-sm-4 col-md-4">
+            <button class="button button1"><p class="fa fa-linkedin" aria-hidden="true"></p>Connect with Linkedin</button>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+         <div class="col-sm-9 col-md-9">  
+          <div class="col-sm-12 col-md-12">
+            <input type="text" class="form-control margin-pop" id="first-name" placeholder='First Name ' name="First Name" >
+           <div class="hide" id="fn-error" />
+           		<span>Please enter proper first name</span>
+          </div>
+        </div>
+            <div class="col-sm-12 col-md-12">
+            <input type="text" class="form-control margin-pop" id="last-name" placeholder="Last Name" name="Last Name">
+            <div class="hide" id="ln-error" />
+              <span>Please enter proper last name</span>
+          </div>
+          </div>
+          <div class="col-sm-12 col-md-12">
+            <input type="text" class="form-control margin-pop" id="title-display" placeholder="Title" name="Title">
+            <div class="hide" id="title-error" />
+              <span>Please enter proper title</span>
+          </div>
+          </div> 
+          <div class="col-sm-12 col-md-12">
+            <input type="text" class="form-control margin-pop" id="company-details" placeholder="Company" name="Company">
+            <div class="hide" id="company-error" />
+              <span>Please enter proper company details</span>
+          </div>
+          </div>
+          <div class="col-sm-12 col-md-12">
+            <input type="text" class="form-control margin-pop" id="phone-number" placeholder="Phone" name="Phone">
+             <div class="hide" id="number-error" />
+              <span>Please enter number in proper format</span>
+          </div>
+          </div>
+          <div class="row">
+           <div class="col-sm-9 col-md-9">
+            <div class="dropdown button-custom">
+            <button class="btn btn-default dropdown-toggle button-pad" type="button" data-toggle="dropdown">City
+             <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Mandya</a></li>
+                 <li><a href="#">Mysore</a></li>
+                 <li><a href="#">Bangalore</a></li>
+               </ul>
+               </div>
+              </div>
+              <div class="col-sm-3 col-md-3">
+            <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle button-right" type="button" data-toggle="dropdown">AK
+             <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">AA</a></li>
+                 <li><a href="#">CS</a></li>
+                 <li><a href="#">SC</a></li>
+               </ul>
+               </div>
+              </div>
+          </div>
+           <div class="col-sm-12 col-md-12">
+            <input type="Email" class="form-control margin-pop" id="email-check" placeholder="Email" name="Email">
+            <div class="hide" id="email-error" />
+              <span>Please enter proper email format</span>
+          </div>
+          </div> 
+           <div class="col-sm-12 col-md-12">
+            <input type="text" class="form-control margin-pop" id="industry-name" placeholder="Industry" name="Industry">
+            <div class="hide" id="industry-error" />
+              <span>Improper Industry Name</span>
+          </div>
+          </div>
+           <div class="col-sm-12 col-md-12">
+            <div class="dropdown button-custom">
+            <button class="btn btn-default dropdown-toggle button-company" type="button" data-toggle="dropdown">Company Size
+             <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">10</a></li>
+                 <li><a href="#">100</a></li>
+                 <li><a href="#">200</a></li>
+               </ul>
+               </div>
+          </div>
+           <div id="check" class="col-sm-12 col-md-12">
+            <input type="checkbox" name="checkbox" id="checkbox_id" value="value">
+            <label for="checkbox_id">I have a referral code</label>
+          </div>
+           <div id="check" class="col-sm-12 col-md-12">
+            <input type="checkbox" name="checkbox" id="checkbox_id" value="value">
+            <label for="checkbox_id">I agree to Konnexe <a>Terms of service</a></label>
+          </div>
+          <div class="row">
+          <div id="robot-border" class="col-sm-4 col-md-4">
+           <!--  <textarea name="comment" form="usrform">I'am not a robot</textarea> -->
+            <input type="checkbox" name="checkbox" id="checkbox_id" value="value">
+            <label for="checkbox_id">I am a robot</label>
+            <img  style="width:50px"src="./images/hero-recaptcha-invisible.gif">
+          </div>
+          <div class="col-sm-8 col-md-8"></div> 
+          </div>     
+          <div class="col-sm-12 col-md-12">
+           <button id="submit" class="btn btn-success" >Sign up</button>
+         </div>
+       </div>
+     </div>
+       <div class="col-sm-3 col-md-3"></div>
+ </div>
+ </div>
+ <div class="col-sm-2 col-md-2"></div> 
+</div>
+<div class="row" id="mid"></div>
+<footer>
+  <div class="row last">
+    <div class="col-sm-6 col-md-6">
+      <ul>
+        <li>Privacy Police</li>
+        <li>User Agreement</li>
+        <li>About</li>
+      </ul>
+    </div>
+
+    <div class="col-sm-6 col-md-6">
+      <footer> &copy; COPYRIGHT KONNEXE.ALL RIGHTS RESERVED</footer>
+    </div>
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/signup.js"></script>
+
+</body>
+</html>  
