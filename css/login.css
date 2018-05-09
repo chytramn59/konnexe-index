@@ -19,7 +19,7 @@ i
 }
 
 @media screen and (max-width: 400px)  {
-  
+
   .col-xs-4 img {
     height: 20px;
   }
@@ -101,7 +101,7 @@ hr {
 }
 #para-edit{
   padding-top:20px;
-  padding-bottom:50px;
+  padding-bottom:50px;sss
   color:grey;
 }
 .last{
