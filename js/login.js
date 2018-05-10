@@ -11,11 +11,11 @@ $(document).ready(function() {
     
 
   });
-  $("#password-check").on('input',function(){
+    $("#password-check").keypress(function(){
     var pass = $('#password-check').val();
-    var nameregex = /^(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z0-9]{7,}$/
+    var nameregex = /^[a-zA-Z0-9.@#$]{5,8}$/;
     if(!nameregex.test(pass)){
-      $('#password-error').removeClass('hide'); /* $('#fn').css('border-color','red');*/
+      $('#password-error').removeClass('hide');/* $('#fn').css('border-color','red');*/
     }
     else{
       $('#password-error').addClass('hide');
