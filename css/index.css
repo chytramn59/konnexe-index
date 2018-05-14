@@ -78,7 +78,7 @@ i
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  margin-left: 428px;
+  margin-left: 428px !important;
 }
 .button1 {border-radius: 25px;}
 
