@@ -12,7 +12,6 @@ $(document).ready(function(){
   $(".parent").click(function(){
     $("#show1").hide();
     $("#hide1").show();
-
   });
   $(".parent1").click(function(){
     $("#show1").show();
@@ -22,7 +21,6 @@ $(document).ready(function(){
   $(".hi").click(function(){
     $("#show2").hide();
     $("#hide2").show();
-
   });
   $(".hello").click(function(){
     $("#hide2").hide();
@@ -32,7 +30,6 @@ $(document).ready(function(){
   $(".hi1").click(function(){
     $("#show3").hide();
     $("#hide3").show();
-
   });
   $(".hello1").click(function(){
     $("#hide3").hide();
@@ -42,7 +39,6 @@ $(document).ready(function(){
   $(".hi2").click(function(){
     $("#show4").hide();
     $("#hide4").show();
-
   });
   $(".hello2").click(function(){
     $("#hide4").hide();
@@ -52,7 +48,6 @@ $(document).ready(function(){
   $(".hi3").click(function(){
     $("#show5").hide();
     $("#hide5").show();
-
   });
   $(".hello3").click(function(){
     $("#hide5").hide();
@@ -62,7 +57,6 @@ $(document).ready(function(){
   $(".hi4").click(function(){
     $("#show6").hide();
     $("#hide6").show();
-
   });
   $(".hello4").click(function(){
     $("#hide6").hide();
@@ -72,7 +66,6 @@ $(document).ready(function(){
   $(".hi5").click(function(){
     $("#show7").hide();
     $("#hide7").show();
-
   });
   $(".hello5").click(function(){
     $("#hide7").hide();
@@ -82,7 +75,6 @@ $(document).ready(function(){
   $(".hi6").click(function(){
     $("#show8").hide();
     $("#hide8").show();
-
   });
   $(".hello6").click(function(){
     $("#hide8").hide();
@@ -92,7 +84,6 @@ $(document).ready(function(){
   $(".hi7").click(function(){
     $("#show9").hide();
     $("#hide9").show();
-
   });
   $(".hello7").click(function(){
     $("#hide9").hide();
@@ -102,7 +93,6 @@ $(document).ready(function(){
   $(".hi8").click(function(){
     $("#show10").hide();
     $("#hide10").show();
-
   });
   $(".hello8").click(function(){
     $("#hide10").hide();
@@ -142,7 +132,6 @@ $(document).ready(function(){
   $(".hi12").click(function(){
     $("#show14").hide();
     $("#hide14").show();
-
   });
   $(".hello12").click(function(){
     $("#hide14").hide();
@@ -155,12 +144,20 @@ $(document).ready(function(){
   });
   $('.cal').click(function(){
     $('.test3').append(cacheDom);
+    $('#b-btm1').removeClass('b-btm1');
+    $('#b-btm2').removeClass('b-btm2');
+    $('#b-btm2').addClass('b-btm1');
+    $('#b-btm1').addClass('b-btm2');
     $('.parent1').click(function(){
       var cacheDom = $('.test');
       $('.test').remove();
     });
   });
   $('.cal1').click(function(){
-      $('.test4').append(cacheDom);
-    });
+    $('.test4').append(cacheDom);
+    $('#b-btm1').addClass('b-btm1');
+    $('#b-btm2').addClass('b-btm2');
+    $('#b-btm2').removeClass('b-btm1');
+    $('#b-btm1').removeClass('b-btm2');
+  });
 });
